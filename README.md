@@ -115,13 +115,6 @@ A few things you may want to change, all near the top of the relevant functions 
 - **Sensor ranges** — adjust the bounds in `read_sensors()`, or replace the function entirely with real hardware reads.
 - **Reference guide** — edit `strawberry.txt` (or point `retrieve_context()` at a different file) to control what the model reasons over.
 
-## Notes and caveats
-
-- **Retrieval is intentionally naive.** It's a simple keyword match, fine for a short single-file guide. For larger or more varied documents you'd want proper chunking and embeddings-based retrieval.
-- **No response validation.** The script prints whatever the model returns. Small models don't always produce strictly valid JSON, so if you build on this, parse and validate the output (e.g. `json.loads`) and handle failures.
-- **No error handling on the API call.** If Ollama isn't running, the `requests.post` call will fail. Make sure `ollama serve` is up before running.
-- **Single cycle.** The controller runs once and exits. Wrap `greenhouse_controller()` in a loop with a delay if you want continuous monitoring.
-
 ## License
 
 Add your preferred license here.
