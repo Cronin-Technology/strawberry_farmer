@@ -1,0 +1,10 @@
+Strawberry Cultivation Guidelines
+Optimal daytime temperature: 20-24°C
+Optimal nighttime temperature: 15-18°C
+
+Relative humidity should remain between 60-64%.
+If humidity exceeds 65%,
+increase ventilation or activate dehumidifier.
+
+If temperature exceeds 26°C,
+activate shading or ventilation.
